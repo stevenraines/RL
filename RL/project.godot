@@ -8,6 +8,12 @@
 
 config_version=5
 
+[MonoCustomResourceRegistry]
+
+ClassPrefix=""
+SearchType=0
+ResourceScriptDirectories=["res://", null]
+
 [application]
 
 config/name="Rl"
@@ -17,11 +23,11 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=384
-window/size/viewport_height=216
+window/size/viewport_width=768
+window/size/viewport_height=576
 window/size/resizable=false
-window/size/window_width_override=1536
-window/size/window_height_override=864
+window/size/window_width_override=768
+window/size/window_height_override=576
 window/stretch/mode="viewport"
 window/dpi/allow_hidpi=false
 window/per_pixel_transparency/allowed=true
@@ -29,6 +35,10 @@ window/per_pixel_transparency/allowed=true
 [dotnet]
 
 project/assembly_name="Rl"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/MonoCustomResourceRegistry/plugin.cfg")
 
 [rendering]
 

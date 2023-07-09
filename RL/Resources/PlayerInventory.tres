@@ -1,0 +1,20 @@
+[gd_resource type="Resource" load_steps=7 format=3 uid="uid://bn2p85fsx14s0"]
+
+[ext_resource type="Script" path="res://Components/Inventory/Inventory.cs" id="1_siwme"]
+[ext_resource type="Resource" uid="uid://dwykobtilr2gj" path="res://Resources/Items/Apple.tres" id="1_wj6yk"]
+[ext_resource type="Script" path="res://Components/Inventory/ItemSlot.cs" id="2_80qoe"]
+[ext_resource type="Resource" uid="uid://cwdmsn7iiet08" path="res://Resources/Items/BlueBook.tres" id="3_fo2ks"]
+
+[sub_resource type="Resource" id="Resource_cyjkt"]
+script = ExtResource("2_80qoe")
+Item = ExtResource("1_wj6yk")
+Quantity = 3
+
+[sub_resource type="Resource" id="Resource_3t6s4"]
+script = ExtResource("2_80qoe")
+Item = ExtResource("3_fo2ks")
+Quantity = 0
+
+[resource]
+script = ExtResource("1_siwme")
+Slots = [SubResource("Resource_cyjkt"), SubResource("Resource_3t6s4"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]

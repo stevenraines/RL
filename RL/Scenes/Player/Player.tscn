@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://bl4y8sy28wyxp"]
 
-[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_iiwcq"]
+[ext_resource type="Script" path="res://Scenes/Player/Player.cs" id="1_ahl4n"]
 [ext_resource type="Texture2D" uid="uid://csbrhybyv76nj" path="res://Assets/Sprites/chara_hero.png" id="1_knoaj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_df2x1"]
@@ -137,11 +137,12 @@ height = 8.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(2.08165e-12, 2.08165e-12)
-script = ExtResource("1_iiwcq")
+script = ExtResource("1_ahl4n")
 Speed = 75
 
 [node name="Camera2D" type="Camera2D" parent="."]
 y_sort_enabled = true
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 drag_horizontal_enabled = true

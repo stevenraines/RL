@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://tsk4t5rdjqy5"]
+[gd_scene load_steps=5 format=3 uid="uid://tsk4t5rdjqy5"]
 
 [ext_resource type="Script" path="res://Main.cs" id="1_3tqvs"]
 [ext_resource type="TileSet" uid="uid://bfgl1v6jccdyv" path="res://Assets/Tileset.tres" id="2_ldket"]
-[ext_resource type="PackedScene" uid="uid://bl4y8sy28wyxp" path="res://Scenes/Player.tscn" id="3_kec50"]
+[ext_resource type="PackedScene" uid="uid://bl4y8sy28wyxp" path="res://Scenes/Player/Player.tscn" id="3_kec50"]
+[ext_resource type="PackedScene" uid="uid://bgyry3g73qpgv" path="res://UI/Inventory.tscn" id="4_rqnrd"]
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
@@ -27,3 +28,21 @@ layer_1/tile_data = PackedInt32Array(-327679, 1, 11, -393215, 131073, 11, -39321
 [node name="Player" parent="." instance=ExtResource("3_kec50")]
 y_sort_enabled = true
 position = Vector2(3, 3)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="InventoryInterface" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerInventory" parent="UI/InventoryInterface" instance=ExtResource("4_rqnrd")]
+texture_filter = 1
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 50.0

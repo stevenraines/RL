@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://daqdqvj7dx2mw"]
+
+[ext_resource type="Script" path="res://Components/Inventory/ItemSlot.cs" id="1_6k7a6"]
+[ext_resource type="Resource" uid="uid://dwykobtilr2gj" path="res://Resources/Items/Apple.tres" id="1_82r27"]
+
+[resource]
+script = ExtResource("1_6k7a6")
+Item = ExtResource("1_82r27")
+Quantity = 0
